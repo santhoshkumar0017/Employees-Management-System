@@ -1,7 +1,7 @@
 package com.ems.EmployeesManagementSy.controller;
 
 import com.ems.EmployeesManagementSy.entity.Employee;
-import com.ems.EmployeesManagementSy.service.EmployeeService;
+import com.ems.EmployeesManagementSy.serviceimp.EmployeeServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class EmployeeController {
 
     @Autowired
-    private EmployeeService employeeService;
+    private EmployeeServiceImp employeeService;
 
   @PostMapping
     public String addEmployee(@RequestBody Employee employee){
