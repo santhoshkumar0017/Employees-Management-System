@@ -1,6 +1,6 @@
 package com.ems.EmployeesManagementSy.serviceimp;
 
-import com.ems.EmployeesManagementSy.entity.Employee;
+import com.ems.EmployeesManagementSy.model.Employee;
 import com.ems.EmployeesManagementSy.repository.EmployeeRepository;
 import com.ems.EmployeesManagementSy.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +33,11 @@ public class EmployeeServiceImp implements EmployeeService {
       return   employeeRepository.getEmployeeById(id);
 
 
+    }
+
+    @Override
+    public String deleteEmployeeById(Long id) {
+
+        return employeeRepository.deleteEmployeeById(id);
     }
 }

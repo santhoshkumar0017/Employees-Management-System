@@ -1,6 +1,6 @@
 package com.ems.EmployeesManagementSy.service;
 
-import com.ems.EmployeesManagementSy.entity.Employee;
+import com.ems.EmployeesManagementSy.model.Employee;
 
 import java.util.List;
 
@@ -11,4 +11,5 @@ public interface EmployeeService {
     public String updateEmployee(Long id,Employee employee);
     public Employee getEmployeeById(Long id);
 
+    String deleteEmployeeById(Long id);
 }
